@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head></head>
+
+<body>
+    <a href = "index.html">Come back</a>
+</body>
+
+<script>
+var i = 1;
+Object.keys(localStorage).forEach((key) => {
+    var saved = document.createElement("img");
+    saved.src = localStorage.getItem(key);
+    var index = document.createElement("p");
+    index.innerHTML = i;
+    i++;
+    document.body.appendChild(saved);
+    localStorage.removeItem(key);
+});
+</script>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+
+<meta charset = "UTF-8">
+<meta name = "author" content = "Bryant Le">
+<meta name = "description" content = "Free Pixel Art Practice">
+<meta name = "keywords" content = "Pixel, Art, Practice, Free">
+<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+
+<title>Website Name</title>
+
+<link rel = "stylesheet" href = "style.css">
+
+</head>
+
+<body>
+
+<!-- Top Bar -->
+<div class = "top">
+  <div class = "container" onclick="transforming(this)">
+    <div id = "bar1"></div>
+    <div id = "bar2"></div>
+    <div id = "bar3"></div>
+  </div>
+  <div id = "title">
+    <h4><a href = "index.html">Pixel Website</a></h4>
+  </div>
+</div>
+
+<!-- Side Bar -->
+<div id = "mySideNav" class = "sideNav">
+  <a href = "#">Pixel Art Tool</a>
+  <a href = "gallery.html">My Gallery</a>
+  <a href = "#">About</a>
+</div>
+
+
+<div id = "coloredSquare"></div>
+
+<!-- Color Picker -->
+<div class = "slideContainer">
+  <p style = "color:red">R <input type = "number" min = 0 max = 255 id = "redValue" value = 0></p>
+  <p style = "color:green">G <input type = "number" min = 0 max = 255 id = "greenValue" value = 0></p>
+  <p style = "color:blue">B <input type = "number" min = 0 max = 255 id = "blueValue" value = 0></p>
+</div>
+
+<!-- Color Grid -->
+<canvas id = "grid" width = "200" height = "200"></canvas>
+<canvas id = "myGrid" width = "200" height = "200"></canvas>
+
+<img id = "saved" width = "200" height = "200">
+
+<div id = "modifyArea">
+  <button id = "penButton">Pen</button>
+  <button id = "eraseButton">Erase</button>
+  <button id = "clearButton">Clear All</button>
+  <select id = "sizes">
+    <option value = "1">1 x 1</option>
+    <option value = "2">2 x 2</option>
+    <option value = "4">4 x 4</option>
+    <option value = "5">5 x 5</option>
+    <option value = "10">10 x 10</option>
+    <option value = "20">20 x 20</option>
+  </select>
+  <canvas id = "palette" width = "400" height = "100"></canvas>
+</div>
+
+<script src = "script.js"></script>
+
+</body>
+</html>
